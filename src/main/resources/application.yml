@@ -1,0 +1,17 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: hondor
+
+security:
+  oauth2:
+    resource:
+      jwk:
+        key-set-uri: http://localhost:8080/auth/realms/code/protocol/openid-connect/certs
+
+logging:
+  level:
+    org.springframework.security.oauth2: DEBUG
+
+

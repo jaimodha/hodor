@@ -1,0 +1,24 @@
+= *HODOR*
+
+```
+    _    _                           _           _     _   _   _
+   / \  | |_      ____ _ _   _ ___  | |__   ___ | | __| | | |_| |__   ___
+  / _ \ | \ \ /\ / / _` | | | / __| | '_ \ / _ \| |/ _` | | __| '_ \ / _ \
+ / ___ \| |\ V  V / (_| | |_| \__ \ | | | | (_) | | (_| | | |_| | | |  __/
+/_/   \_\_| \_/\_/ \__,_|\__, |___/ |_| |_|\___/|_|\__,_|  \__|_| |_|\___|
+                         |___/
+     _                            _   _  ___  ____   ___  ____
+  __| | ___   ___  _ __          | | | |/ _ \|  _ \ / _ \|  _ \
+ / _` |/ _ \ / _ \| '__|  _____  | |_| | | | | | | | | | | |_) |
+| (_| | (_) | (_) | |    |_____| |  _  | |_| | |_| | |_| |  _ <
+ \__,_|\___/ \___/|_|            |_| |_|\___/|____/ \___/|_| \_\
+
+```
+
+
+**HODOR** play two key roles
+
+- Acts as a API gateway to route all the incomming request to the backend API's using **Netflix Zuul**.
+- **Spring Security OAuth2 Resource Server** to authenctiate all the endoints with a OAuth2 complient identity server.
+
+We are going to use **Keycloak** as our identity server. But the goal is to build the Hodor gateway in a way that we can easily replace keyclaok with any identity provider (Hopefully not something as insane as WSO2).
