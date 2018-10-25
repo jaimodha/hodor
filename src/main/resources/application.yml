@@ -7,6 +7,7 @@ spring:
 security:
   oauth2:
     resource:
+# If we just use this some how does not populate the principal user.
 #      jwk:
 #        key-set-uri: http://localhost:8080/auth/realms/code/protocol/openid-connect/certs
       user-info-uri: http://localhost:8080/auth/realms/code/protocol/openid-connect/userinfo
@@ -16,6 +17,7 @@ logging:
     org.springframework.security.oauth2: INFO
     org.springframework.cloud.netflix.zuul: INFO
 
+# TODO Update all the paths to all the apis here and make them configurable.
 zuul:
   routes:
     todo:

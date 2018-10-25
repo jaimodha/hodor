@@ -22,3 +22,5 @@
 - **Spring Security OAuth2 Resource Server** to authenctiate all the endoints with a OAuth2 complient identity server.
 
 We are going to use **Keycloak** as our identity server. But the goal is to build the Hodor gateway in a way that we can easily replace keyclaok with any identity provider (Hopefully not something as insane as WSO2).
+
+image::arch.png[]
