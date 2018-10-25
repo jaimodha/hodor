@@ -7,11 +7,17 @@ spring:
 security:
   oauth2:
     resource:
-      jwk:
-        key-set-uri: http://localhost:8080/auth/realms/code/protocol/openid-connect/certs
+#      jwk:
+#        key-set-uri: http://localhost:8080/auth/realms/code/protocol/openid-connect/certs
+      user-info-uri: http://localhost:8080/auth/realms/code/protocol/openid-connect/userinfo
 
 logging:
   level:
-    org.springframework.security.oauth2: DEBUG
+    org.springframework.security.oauth2: INFO
+    org.springframework.cloud.netflix.zuul: INFO
 
-
+zuul:
+  routes:
+    todo:
+      path: /todo/**
+      url: https://jsonplaceholder.typicode.com/todos
